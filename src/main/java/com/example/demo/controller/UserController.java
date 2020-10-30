@@ -20,7 +20,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public UserResponse getUser (@PathVariable UUID id) {
+    public UserResponse getUser (@PathVariable Long id) {
         return userService.getUser(id);
     }
 
@@ -33,4 +33,6 @@ public class UserController {
     public UserResponse createUser(@RequestBody CreateUserRequest request) throws Exception{
         return userService.createUser(request);
     }
+
+
 }

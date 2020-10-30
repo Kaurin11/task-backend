@@ -3,10 +3,8 @@ package com.example.demo.dto.request;
 import lombok.Data;
 
 @Data
-public class CreateUserRequest {
+public class LoginRequest {
 
     private String username;
-    private String firstName;
-    private String lastName;
     private String password;
 }
